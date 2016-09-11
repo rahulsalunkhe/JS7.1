@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Button</title>
+	<script type="text/javascript">
+	var a=1;
+	function changeButt(){
+		if(a==0){
+			document.getElementById('button').style.height = "25px";
+			document.getElementById('button').style.width = "80px";
+			document.getElementById('button').style.backgroundColor = "#70D8FA";
+			document.getElementById('button').style.border="1px solid orange";
+			document.getElementById('button').style.color="white";
+			document.getElementById('button').style.texAlign="center";
+			document.getElementById('button').style.lineHeight="25px";
+			document.getElementById('button').style.borderRadius="5px";
+			document.getElementById('button').innerHTML = "Like";
+			a=1;
+		}
+		else
+		{
+			document.getElementById('button').style.height = "25px";
+			document.getElementById('button').style.width = "80px";
+			document.getElementById('button').style.backgroundColor = "#FA9073";
+			document.getElementById('button').style.border="1px solid orange";
+			document.getElementById('button').style.color="white";
+			document.getElementById('button').style.texAlign="center";
+			document.getElementById('button').style.lineHeight="25px";
+			document.getElementById('button').style.borderRadius="5px";
+			document.getElementById('button').innerHTML = "Unlike";
+			a=1;			a=0;
+		}
+	}
+</script>	
+</head>
+<body>
+<div id="button" onclick="changeButt();"> Like </div>
+<style type="text/css">
+	#button{
+		height: 25px;
+		width: 80px;
+		background-color: #70D8FA;
+		border: 1px solid orange;
+		color: white;
+		text-align: center;
+		line-height: 25px;
+		border-radius: 5px;
+	}
+	#button:hover{
+		cursor: pointer;
+	}
+	.changeButton{
+		height: 25px;
+		width: 80px;
+		background-color: #E61C33;
+		border: 1px solid orange;
+		color: white;
+		text-align: center;
+		line-height: 25px;
+	}
+</style>
+</body>
+</html>
